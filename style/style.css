@@ -1,0 +1,114 @@
+:root {
+    --vermelho: #c20000;
+    --preto: #1c1c1c;
+    --cinza: #aaa;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "arial";
+    text-decoration: none;
+}
+
+/* Base */
+
+body {
+    background-color: #1d1d1d;
+    color: var(--cinza);
+}
+
+header nav a:hover {
+    color: #fff;
+}
+
+.container_a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 20px;
+}
+
+.container_a a {
+    text-decoration: none;
+    color: var(--cinza);
+    margin-right: 10px;
+}
+
+.container_a h2 {
+    color: var(--vermelho);
+    font-size: 40px;
+    font-family: "Arial Black", Times, serif;
+    font-weight: bolder;
+}
+
+header nav a {
+    transition: 0.3s ease all;
+}
+
+/* Filme Principal */
+.principal_movie{
+    font-size: 16px;
+    height: 400px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) 100%),
+        url(../img/Elementary-banner.jpg) no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.container_b {
+    margin-left: 20px;
+    margin-bottom: 50px;
+}
+
+.container_b .title {
+    margin-top: 15%;
+    font-size: 40px;
+    font-family: "Trebuchet MS", Arial, sans-serif;
+}
+
+.container_b .sinopse {
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.container_b .buttons {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    font-size: 12px;
+    color: var(--cinza);
+    margin-right: 15px;
+    padding: 15px 30px;
+
+    cursor: pointer;
+    transition: 0.3s ease all;
+}
+
+.container_b .buttons:hover {
+    background-color: var(--cinza);
+    color: var(--preto);
+}
+
+.buttons i {
+    margin-right: 8px;
+}
+
+.principal_movie .container_b{
+    width: 60%;
+
+}
+
+/* Carousel */
+
+.box-movies{
+    margin-top: 50px;
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+.carousel_movies{
+    margin-top: 5px;
+}
